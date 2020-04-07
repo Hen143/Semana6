@@ -1,0 +1,64 @@
+public class Turma {
+
+	private String nome;
+	private String curso;
+	private int quantidadeDeAlunos;
+	private int serie;
+
+	public Turma(String n, String c, int qnt, int s) {
+		nome = n;
+		curso = c;
+		quantidadeDeAlunos = qnt;
+		serie = s;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	public Strinf getCurso() {
+		return curso;
+	}
+	public int getQuantidadeDeAlunos() {
+		return quantidadeDeAlunos;
+	}
+	public int getSerie() {
+		return serie;
+	}
+
+	public void setNome(String n) {
+		nome = n;
+	}
+	public void setCurso(Sting c) {
+		curso = c;
+	}
+	public void setQuantidadeDeAlunos(int qnt) {
+		quantidadeDeAlunos = qnt;
+	}
+	public void setSerie(int s) {
+		serie = s;
+	}
+	
+}
+
+
+
+
+import javax.swing.JOptionPane;
+public class Turma {
+
+	public static void main(String[] args) {
+
+		String nome = JOptionPane.showInputDialog("Nome");
+		String curso = JOptionPane.showInputDialog("curso");
+		int quantidadeDeAlunos = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de alunos"));
+		int serie = Integer.parseInt(JOptionPane.showInputDialog("Serie"));
+		Turma turma = new Turma(nome, curso, quantidadeDeAlunos, serie);
+		String msg = "Nome: " + turma.getNome() + "\nCurso: "+ turma.getCurso() + "\nQuantidade De Alunos: " + turma.getQuantidadeDeAlunos()+ "\nSerie: " + turma.getSerie() +;
+		
+		JOptionPane.showMessageDialog(null, msg);
+
+		msg = "Nome: " + turma.getNome() + "\nCurso: " + turma.getCurso() + "\nQuantidadeDeAlunos: " + turma.getQuantidadeDeAlunos() + "\nSerie: " + turma.getSerie() +;
+		
+		JOptionPane.showMessageDialog(null, msg);
+	}
+}
